@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Aniket Menkudle | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Page content. Design is in style.css, behaviour and your details are in script.js -->
+    <div id="glow"></div>
+    <nav>
+      <b>Aniket Menkudle</b>
+      <ul>
+        <li><a href="#home" class="on">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#upcoming">Coming next</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Home (name, photo, buttons) -->
+      <section id="home">
+        <div>
+          <h1>Hi, I'm <span>Aniket</span> Menkudle</h1>
+          <div class="role">
+            <span id="typed"></span><span class="caret"></span>
+          </div>
+          <p class="lead">
+            Computer Science student from Pune who builds clean, fast web apps,
+            from the interface to the database.
+          </p>
+          <div class="btns">
+            <a class="btn p" href="#projects">See my projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn" data-k="resume" href="#">Download resume</a>
+          </div>
+        </div>
+        <div>
+          <div class="photo" id="photo">
+            <div class="in" id="photoIn">
+              <div><div class="ini">AM</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About me -->
+
+      <section id="about">
+        <h2>About me</h2>
+        <p class="sub">A quick snapshot. Click a box to see it light up.</p>
+        <div class="info">
+          <div class="box">
+            <h3>Name</h3>
+            <p>Aniket Menkudle</p>
+          </div>
+          <div class="box">
+            <h3>Education</h3>
+            <p>
+              B.Tech in Computer Science Engineering, Yashoda Technical Campus,
+              Satara (2022 to 2026)
+            </p>
+          </div>
+          <div class="box">
+            <h3>Location</h3>
+            <p>Pune, Maharashtra, India</p>
+          </div>
+          <div class="box">
+            <h3>Looking for</h3>
+            <p>Entry-level Full-Stack Developer roles</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical skills -->
+
+      <section id="skills">
+        <h2>Technical skills</h2>
+        <p class="sub">Filter by area to see the tools I work with.</p>
+        <div class="tabs" id="tabs"></div>
+        <div class="skills" id="skills-grid"></div>
+      </section>
+
+      <!-- Projects -->
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p class="sub">
+          Click a box for details, or use the links to open the deployed site
+          and code.
+        </p>
+        <div class="grid" id="projGrid"></div>
+      </section>
+
+      <!-- Coming next (future projects) -->
+
+      <section id="upcoming">
+        <h2>Coming next</h2>
+        <p class="sub">
+          Projects I plan to build and deploy. Progress updates as I go.
+        </p>
+        <div class="grid" id="upGrid"></div>
+      </section>
+
+      <!-- Education and certificates -->
+
+      <section id="education">
+        <h2>Education and certificates</h2>
+        <p class="sub">
+          My learning path, plus certificates, internships and hackathons.
+        </p>
+        <div class="tl" id="tl"></div>
+      </section>
+
+      <!-- Contact -->
+
+      <section id="contact">
+        <h2>Let's connect</h2>
+        <p class="sub">Open to internships and full-time roles. Say hello.</p>
+        <form id="cf">
+          <input
+            id="fn"
+            placeholder="Your name"
+            required
+            aria-label="Your name"
+          />
+          <input
+            id="fe"
+            type="email"
+            placeholder="Your email"
+            required
+            aria-label="Your email"
+          />
+          <textarea
+            id="fm"
+            rows="4"
+            placeholder="Your message"
+            required
+            aria-label="Your message"
+          ></textarea>
+          <button class="btn p" type="submit">Send message</button>
+        </form>
+        <div class="links">
+          <a class="btn" data-k="email" href="#">Email me</a>
+          <a class="btn" data-k="github" href="#">GitHub</a>
+          <a class="btn" data-k="linkedin" href="#">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+    <footer>Aniket Menkudle. Built with HTML, CSS and JavaScript.</footer>
+
+    <div id="toast" role="status"></div>
+    <div id="modal" role="dialog" aria-modal="true">
+      <div class="card" id="card"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
