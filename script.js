@@ -75,8 +75,8 @@ const projects = [
       "Download the quiz and detailed answers as PDFs",
       "React and Vite frontend with an Express and MongoDB backend",
     ],
-    live: "",
-    repo: "",
+    live: "https://study-desk-m81qcmdyk-aniket-ba90.vercel.app",
+    repo: "https://github.com/AniketMenkudle/study-desk",
   },,
  
 ];
